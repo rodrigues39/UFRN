@@ -1,0 +1,8 @@
+# Library
+pandas
+sklearn
+seaborn
+numpy
+matplotlib
+torch
+collections
