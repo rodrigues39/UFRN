@@ -3,7 +3,7 @@ main:
   # pseudo-random operations
   random_seed: 42
 data:
-  reference_dataset: "pipeline/data/preprocessing_data.csv"
+  reference_dataset: "PPGEEC2318/Projeto_01/data/customer_purchase_data.csv"
   # Train_test_split
   train_size: 0.7
   val_size: 0.3
