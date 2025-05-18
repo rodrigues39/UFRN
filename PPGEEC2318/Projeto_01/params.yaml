@@ -1,0 +1,35 @@
+main:
+  # This seed will be used to ensure repeatibility of the data splits and other
+  # pseudo-random operations
+  random_seed: 42
+data:
+  reference_dataset: "pipeline/data/preprocessing_data.csv"
+  # Train_test_split
+  train_size: 0.7
+  val_size: 0.3
+  random_state:42
+  # Torch
+  manual_seed:13
+  
+  # DataLoader
+  train:
+  batch_size=20
+  shuffle=True
+
+  val:
+  batch_size=20
+  
+  # Stratify according to the target when splitting the data
+  # in train/test or in train/val
+  stratify: "PurchaseStatus"
+train:
+  Architecture:
+    criterion: "BCEWithLogitsLoss"
+    model: model
+    optimizer: SGD
+  model:
+    Epochs: 300
+    learning_rate: 0.01
+    features: 08
+    out: 01
+ 
