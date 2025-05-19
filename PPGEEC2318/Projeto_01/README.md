@@ -50,7 +50,6 @@ This suggests that the model is working well for this dataset, without being sig
 
 
 ## Ethical Considerations
-We may be tempted to claim that this dataset contains the some attributes capable of predicting factores of buy someone's but the metrics must be improved. the accuracy obtained was 83%
-
+We may be tempted to claim that this dataset contains the some attributes capable of predicting factores of buy someone's but the metrics must be improved.
 ## Caveats and Recommendations
 It should be noted that the model trained in this project was used only for validation of a complete data pipeline. It is notary that some important issues related to dataset imbalances exist, and adequate techniques need to be adopted in order to balance it.
