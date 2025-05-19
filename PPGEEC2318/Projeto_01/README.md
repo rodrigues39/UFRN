@@ -37,9 +37,13 @@ In order to follow the performance of machine learning experiments, the project 
 ![image](https://github.com/user-attachments/assets/5a61d34f-7413-44cc-bcd6-aa945343b8bc)
 
 The model shows balanced performance between the two classes (0, 1), with:
+
 • Good overall accuracy (83%)
+
 • Balanced precision and recall for both classes.
+
 • Slight advantage in identifying class 0 (higher recall)
+
 • Improved performance in precision for class 1.
 
 This suggests that the model is working well for this dataset, without being significant for any of the specific classes.
