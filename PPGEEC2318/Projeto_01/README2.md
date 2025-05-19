@@ -25,7 +25,8 @@ Describe: ![image](https://github.com/user-attachments/assets/39afbf26-06f3-4f4b
 The dataset under study is split into Train and Test during the ``Segregate``. 70% of the clean data is used to Train and the remaining 30% to Test.  This configuration is done in a [yaml file](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_01/params.yaml).
 
 ## Metrics
-In order to follow the performance of machine learning experiments, the project utilities accuracy, F1, precision, recall as metrics.The metrics adopted they are: [classification report](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html), [confusion matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
+In order to follow the performance of machine learning experiments, the project utilities accuracy, F1, precision, recall as metrics.The metrics adopted they are: [classification report](https://scikitlearn.org/stable/modules/generated/sklearn.metrics.classification_report.html), [confusion matrix](https://scikitlearn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
+
 ![image](https://github.com/user-attachments/assets/a7673c72-9158-41f6-99ef-51939a74ba0c)
 
 ![image](https://github.com/user-attachments/assets/5a61d34f-7413-44cc-bcd6-aa945343b8bc)
