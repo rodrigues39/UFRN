@@ -32,4 +32,7 @@ train:
     learning_rate: 0.01
     features: 08
     out: 01
+    state_dict: [('linear.weight', tensor([[-0.8774,  0.0568,  0.6672,  0.6101, -0.1084,  0.9775,  1.0297,  1.0730]])), ('linear.bias', tensor([-0.2703]))]
+
+    
  
