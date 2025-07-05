@@ -5,6 +5,7 @@ Context:
 This version is an update to the previous version of the dataset. A quality assessment program was run on the previous version, which establishes a specific number of duplicate or near-duplicate images. Since the presence of duplicates can lead to artificially high validation and testing accuracy, these images have been removed in this version.
 Images were gathered from internet searches. The images were scanned with a duplicate image detector program I wrote. Any duplicate images were removed to prevent bleed through of images between the train, test and valid data sets. All images were then resized to 224 X224 X 3 and converted to jpg format. A csv file is included that for each image file contains the relative path to the image file, the image file class label and the dataset (train, test or valid) that the image file resides in. This is a clean dataset. If you build a good model you should achieve at least 95% accuracy on the test set. If you build a very good model for example using transfer learning you should be able to achieve 98%+ on test set accuracy.
 
+link: https://www.kaggle.com/datasets/gpiosenka/sports-classification/data
 
 Título:
 100 Sports Image Classification
