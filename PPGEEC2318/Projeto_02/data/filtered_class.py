@@ -2,15 +2,6 @@ filtered: Made on Google Colab with GPU
 library: zipfile,os
 url: https://www.kaggle.com/datasets/gpiosenka/sports-classification/data
 
-The original dataset consists of 100 distinct sports classes, covering a wide variety of modalities. For the specific purposes of this study, a targeted selection of 10 sports classes was performed, chosen based on criteria of representativeness and diversity of movements. 
-This filtering resulted in the creation of a new compressed file (.zip), containing only the samples corresponding to the 10 selected classes.
-
-During the extraction process, the original structure of the dataset was maintained, organized into three main subsets: train(1205), validation(259) and test(263), total(1727). 
-This standardization ensures the integrity of the training and evaluation flow of the proposed models.
-
-All images were standardized to RGB format with a resolution of 224×224 pixels (224×224×3), in order to ensure compatibility with convolutional neural network architectures widely used in the literature.
-
-
 Data Generation
 
 This dataset was filtered to classify 10 different sports:
