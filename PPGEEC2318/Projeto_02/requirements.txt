@@ -1,1 +1,10 @@
-
+# Library
+torch
+torchvision
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+Pillow
+requests
