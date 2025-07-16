@@ -59,7 +59,8 @@ Classes were chosen for their visual diversity and representativeness. The goal 
   - Random rotation (±10°)
 
 - **Class Weights:**  
-  Calculated from the training distribution and applied to the loss function to mitigate class imbalance. Values used: [0.9414, 0.9640, 1.1476,0.8607,0.8607, 0.8669, 0.9797, 1.2296, 1.1931,1.1368]
+  Calculated from the training distribution and applied to the loss function to mitigate class imbalance.
+  Values used: [0.9414, 0.9640, 1.1476,0.8607,0.8607, 0.8669, 0.9797, 1.2296, 1.1931,1.1368]
 
 ## Quantitative Analyses
 Despite architectural differences between the models, overall performance remained consistently high. The 'Novo Modelo' variant demonstrated superior results, especially in handling complex classes.
