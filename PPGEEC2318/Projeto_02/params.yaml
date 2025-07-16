@@ -1,1 +1,164 @@
+dataset:
+  name: "10_Sports_Classes"
+  data_dir: "PPGEEC2318/Projeto_02/data/filtered_class.py"
+  image_size: [224, 224]
+  num_classes: 10
+  train_samples: 1205
+  val_samples: 259
+  test_samples: 263
 
+  dataloader:
+    train:
+      batch_size: 16
+      shuffle: true
+    test:
+      batch_size: 263
+      shuffle: false
+    val:
+      batch_size: 16
+      shuffle: false
+
+models:
+  model_cnn:
+    architecture: "CNN2"
+    in_channels: 3
+    conv_layers:
+      - out_channels: 16
+        kernel_size: 3
+        stride: 1
+        pooling: true
+        pool_type: "max"
+        pool_kernel: 2
+        pool_stride: 2
+        activation: "ReLU"
+      - out_channels: 16
+        kernel_size: 3
+        stride: 1
+        pooling: true
+        pool_type: "max"
+        pool_kernel: 2
+        pool_stride: 2
+        activation: "ReLU"
+    fc_layers:
+      - out_features: 50
+        activation: "ReLU"
+      - out_features: 10
+        activation: "None"
+    dropout: 0.3
+    num_classes: 10
+
+  model_cnn_nf:
+    architecture: "CNN2_M2"
+    in_channels: 3
+    conv_layers:
+      - out_channels: 32
+        kernel_size: 3
+        stride: 1
+        pooling: true
+        pool_type: "max"
+        pool_kernel: 2
+        pool_stride: 2
+        activation: "ReLU"
+      - out_channels: 32
+        kernel_size: 3
+        stride: 1
+        pooling: true
+        pool_type: "max"
+        pool_kernel: 2
+        pool_stride: 2
+        activation: "ReLU"
+    fc_layers:
+      - out_features: 50
+        activation: "ReLU"
+      - out_features: 10
+        activation: "None"
+    dropout: 0.3
+    num_classes: 10
+
+  model_cnn_b:
+    architecture: "CNN2_M3"
+    in_channels: 3
+    conv_layers:
+      - out_channels: 32
+        kernel_size: 3
+        stride: 1
+        padding: 1
+        pooling: true
+        pool_type: "max"
+        pool_kernel: 2
+        pool_stride: 2
+        activation: "ReLU"
+      - out_channels: 32
+        kernel_size: 3
+        stride: 1
+        padding: 1
+        pooling: false
+        activation: "ReLU"
+      - out_channels: 32
+        kernel_size: 3
+        stride: 1
+        pooling: true
+        pool_type: "max"
+        pool_kernel: 2
+        pool_stride: 2
+        activation: "ReLU"
+    fc_layers:
+      - out_features: 50
+        activation: "ReLU"
+      - out_features: 10
+        activation: "None"
+    dropout: 0.5
+    num_classes: 10
+
+  model_cnn_ex:
+    architecture: "CNN2_M4"
+    in_channels: 3
+    conv_layers:
+      - out_channels: 32
+        kernel_size: 3
+        stride: 1
+        pooling: false
+        activation: "ReLU"
+      - out_channels: 32
+        kernel_size: 3
+        stride: 1
+        padding: 1
+        pooling: false
+        activation: "ReLU"
+      - out_channels: 32
+        kernel_size: 3
+        stride: 1
+        pooling: true
+        pool_type: "max"
+        pool_kernel: 2
+        pool_stride: 2
+        activation: "ReLU"
+    fc_layers:
+      - out_features: 50
+        activation: "ReLU"
+      - out_features: 10
+        activation: "None"
+    dropout: 0.5
+    num_classes: 10
+
+training:
+  num_epochs: 100
+  optimizer: "Adam"
+  seed: 42
+  device: "cuda"
+  loss:
+    type: "CrossEntropyLoss"
+    reduction: "mean"
+    class_weights: [0.9414, 0.9640, 1.1476, 0.8607, 0.8607, 0.8669, 0.9797, 1.2296, 1.1931, 1.1368]
+
+  learning_rate:
+    model_cnn: 0.0003
+    model_cnn_nf: 0.0003
+    model_cnn_b: 0.0002
+    model_cnn_ex: 0.0002
+
+  weight_decay:
+    model_cnn: 0.0001
+    model_cnn_nf: 0.0001
+    model_cnn_b: 0.0001
+    model_cnn_ex: 0.0001
