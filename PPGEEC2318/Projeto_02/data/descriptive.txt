@@ -1,28 +1,28 @@
-Tittle: 
-100 Sports Image Classification
+Context
+This version of the dataset is an update of the original, available at:
+Kaggle – Sports Classification Dataset
+https://www.kaggle.com/datasets/gpiosenka/sports-classification/data
 
-Context:
-This version is an update to the previous version of the dataset. A quality assessment program was run on the previous version, which establishes a specific number of duplicate or near-duplicate images. Since the presence of duplicates can lead to artificially high validation and testing accuracy, these images have been removed in this version.
-Images were gathered from internet searches. The images were scanned with a duplicate image detector program I wrote. Any duplicate images were removed to prevent bleed through of images between the train, test and valid data sets. All images were then resized to 224 X224 X 3 and converted to jpg format. A csv file is included that for each image file contains the relative path to the image file, the image file class label and the dataset (train, test or valid) that the image file resides in. This is a clean dataset. If you build a good model you should achieve at least 95% accuracy on the test set. If you build a very good model for example using transfer learning you should be able to achieve 98%+ on test set accuracy.
+The original dataset contains images collected from internet searches, covering 100 distinct sports categories. A duplicate detection program was applied to remove identical or near-identical images, avoiding bias in the model evaluation process. All images were resized to 224×224×3 (RGB) and converted to .jpg format. A .csv file is included, specifying the relative path of each image, its class label, and its corresponding dataset split (train, validation, or test).
 
-link: https://www.kaggle.com/datasets/gpiosenka/sports-classification/data
+Filtering and Dataset Structure
+For the purposes of this study, a targeted selection of 10 sports classes was performed, based on criteria of representativeness and diversity of physical movement. This filtering resulted in the creation of a new compressed archive (.zip), containing only the samples corresponding to the selected 10 classes.
 
-Título:
-100 Sports Image Classification
+During the extraction process, the original folder structure of the dataset was preserved, with the following standardized distribution:
 
-Descrição:
-Esta versão é uma atualização da versão anterior do dataset. Um programa de avaliação de qualidade foi executado na versão anterior, o qual identificou uma quantidade considerável de imagens duplicadas ou quase duplicadas. Como a presença de duplicatas pode levar a uma validação e teste com acurácias artificialmente elevadas, essas imagens foram removidas nesta versão.
+Training: 1,205 images
 
-As imagens foram coletadas por meio de buscas na internet. Em seguida, passaram por um programa de detecção de duplicatas desenvolvido especificamente para este fim. Com isso, garantiu-se que não houvesse sobreposição entre os conjuntos de treino, teste e validação.
+Validation: 259 images
 
-Todas as imagens foram redimensionadas para 224x224 pixels com 3 canais (RGB) e salvas no formato .jpg. Um arquivo .csv acompanha o dataset, contendo para cada imagem:
+Testing: 263 images
 
-O caminho relativo do arquivo,
+Total: 1,727 images
 
-O rótulo (classe),
+All images were kept in RGB format with a resolution of 224×224 pixels, ensuring compatibility with convolutional neural network (CNN) architectures widely used in the literature, such as VGG, ResNet, and EfficientNet.
 
-E o conjunto a que pertence (train, test ou valid).
+Conclusion
+Despite the reduced number of classes and samples, the filtered dataset is well-suited for validation of neural network architectures, application of data augmentation techniques, and overfitting analysis. However, the limited number of samples presents a high risk of overfitting, requiring the use of regularization methods and/or effective data augmentation strategies to ensure model generalization.
 
-Este é um dataset limpo e balanceado, adequado para tarefas de classificação de imagens com redes neurais convolucionais ou técnicas de aprendizado profundo.
-Com um bom modelo, é possível atingir ao menos 95% de acurácia no conjunto de teste. Modelos mais avançados, como aqueles que utilizam aprendizado por transferência (transfer learning), podem alcançar acurácia superior a 98%.
+
+
 
