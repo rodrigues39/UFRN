@@ -28,6 +28,4 @@ with zipfile.ZipFile(arquivo_zip, 'r') as zip_ref:
 
 print("Extração concluída!")
 
-Conclusion
-Despite the limited number of samples, the filtered dataset proved suitable for validating neural network architectures, applying data augmentation techniques, and analyzing overfitting. 
-However, its small size poses a high risk of overfitting, which requires the use of regularization methods and/or effective data augmentation strategies to ensure the generalization capability of the trained models.
+
