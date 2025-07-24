@@ -11,6 +11,7 @@ The core of the pipeline is a general-purpose training class that acts as an end
 - Data preprocessing and augmentation
 - Optimizer, scheduler, and loss configuration
 - Evaluation and visualization of metrics
+- FindingLR
 
 - **Model date:** 16/07/2025  
 - **Model names:** `model_cnn`, `model_cnn_nf`, `model_cnn_b`, `model_cnn_ex`  
@@ -40,8 +41,8 @@ To effectively monitor and compare the performance of machine learning experimen
 
 ## Evaluation Data
 The loss graph by epochs shows better model performance with validation data and no signs of overfitting
-![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_01_02.png)
-![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_03_04.png)
+![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_01_lr.png) ![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_02_lr.png)
+![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_03_lr.png) ![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_04_lr.png)
 
 ## Training Data
 Classes were chosen for their visual diversity and representativeness. The goal was to create a balanced and interpretable benchmark for evaluating CNN architectures.
