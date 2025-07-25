@@ -142,7 +142,10 @@ models:
     num_classes: 10
 
 training:
-  num_epochs: 100
+  num_epochs_cnn: 85
+  num_epochs_cnn_nf: 70
+  num_epochs_cnn_b: 100
+  num_epochs_cnn_ex: 65
   optimizer: "Adam"
   seed: 42
   device: "cuda"
@@ -152,10 +155,10 @@ training:
     class_weights: [0.9414, 0.9640, 1.1476, 0.8607, 0.8607, 0.8669, 0.9797, 1.2296, 1.1931, 1.1368]
 
   learning_rate:
-    model_cnn: 0.0003
-    model_cnn_nf: 0.0003
-    model_cnn_b: 0.0002
-    model_cnn_ex: 0.0002
+    model_cnn: 0.00050
+    model_cnn_nf: 0.00045
+    model_cnn_b: 0.00015
+    model_cnn_ex: 0.00054
 
   weight_decay:
     model_cnn: 0.0001
