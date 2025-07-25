@@ -37,12 +37,24 @@ This is an example of a [hook](https://github.com/rodrigues39/UFRN/blob/main/PPG
 
 ## Metrics
 To effectively monitor and compare the performance of machine learning experiments, this project adopts the following evaluation metrics:
-**Accuracy**, **Precision**, **Recall** and **F1-Score**. Using: classification report, confusion matrix.
+**Accuracy**, **Precision**, **Recall** and **F1-Score**. Using:  [classification report](https://scikitlearn.org/stable/modules/generated/sklearn.metrics.classification_report.html), [confusion matrix](https://scikitlearn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
+### Classification Reports
+[`model_cnn`](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/report_cnn.jpg)
+[`model_cnn_nf`](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/report_cnn_nf.jpg)
+[`model_cnn_b`](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/report_cnn_b.jpg)
+[`model_cnn_ex`](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/report_cnn_ex.jpg)
+
+### Confusion Matrix
+![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/matriz%20confusion02.png)
 
 ## Evaluation Data
 The loss graph by epochs shows better model performance with validation data and no signs of overfitting
-![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_01_lr.png) ![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_02_lr.png)
-![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_03_lr.png) ![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_04_lr.png)
+[loss_model_cnn](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_01_lr.png), 
+[loss_model_cnn_nf](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_02_lr.png), 
+[loss_model_cnn_b](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_03_lr.png) and
+[loss_model_cnn_ex](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_04_lr.png).
+
+## Finding
 
 ## Training Data
 Classes were chosen for their visual diversity and representativeness. The goal was to create a balanced and interpretable benchmark for evaluating CNN architectures.
@@ -74,11 +86,7 @@ Despite architectural differences between the models, overall performance remain
 
 These findings suggest that, beyond model improvements, performance is also heavily influenced by **image quality, diversity**, and **intra-class visual similarity**, which remain key challenges in this classification task.
 ![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/matriz%20confusion.png)
-### 📑 Classification Reports
-[`model_cnn`](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/report_cnn.jpg)
-[`model_cnn_nf`](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/report_cnn_nf.jpg)
-[`model_cnn_b`](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/report_cnn_b.jpg)
-[`model_cnn_ex`](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/report_cnn_ex.jpg)
+
 
 ## Ethical Considerations
 The dataset used in this project consists exclusively of sports images collected from public sources and does not include sensitive personal data such as faces, demographic attributes (e.g., race, gender), or private content.
