@@ -54,7 +54,6 @@ The loss graph by epochs shows better model performance with validation data and
 [loss_model_cnn_b](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_03_lr.png) and
 [loss_model_cnn_ex](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/loss_04_lr.png).
 
-## Finding
 
 ## Training Data
 Classes were chosen for their visual diversity and representativeness. The goal was to create a balanced and interpretable benchmark for evaluating CNN architectures.
@@ -82,10 +81,19 @@ Despite architectural differences between the models, overall performance remain
   Accuracy scores were close across all models, with minor variations, indicating that model design alone was not the primary limiting factor.
 
 - **Classification Report:**  
-  F1-scores for most models ranged between **0.58 and 0.64**, with accuracy for some individual classes varying from **54% to 61%**, particularly in visually similar categories.
+  F1-scores for most models ranged between **0.55 and 0.65**, with accuracy for some individual classes varying from **56% to 65%**, particularly in visually similar categories.
+- **Learning Rate Finder:**   
+  In all experiments, models benefited from the use of a Learning Rate Finder, which was used to select learning rates based on the curvature of the loss curve, prioritizing regions with steepest descent. This approach, inspired by "Deep Learning with PyTorch: Step-by-Step", enabled faster convergence and improved model stability. The positive effect of this technique is observable in the smoothed loss curves and in the consistent accuracy achieved across architectures.
+These findings suggest that, beyond model improvements, performance is also heavily influenced by image quality, diversity, and intra-class visual similarity, which remain key challenges in this classification task.
+
+Below are the LR Finder plots for each architecture:
+[`model_cnn`](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/finding01.png),
+[`model_cnn_nf`](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/finding_02.png),
+[`model_cnn_b`](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/finding_03.png) and
+[`model_cnn_ex`](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/finding_04.png).
 
 These findings suggest that, beyond model improvements, performance is also heavily influenced by **image quality, diversity**, and **intra-class visual similarity**, which remain key challenges in this classification task.
-![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/matriz%20confusion.png)
+![image](https://github.com/rodrigues39/UFRN/blob/main/PPGEEC2318/Projeto_02/data/comparative_lr.jpg)
 
 
 ## Ethical Considerations
